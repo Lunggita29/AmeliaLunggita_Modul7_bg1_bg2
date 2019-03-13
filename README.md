@@ -17,7 +17,6 @@ lalu akan ditampilkan create database. edit nama database lalu klik create. maka
 
 3. Berikan code query untuk menampilkan sebuah data yang ada pada ke database?
 
-<?php
 
 include '../connect.php';
 
@@ -29,7 +28,6 @@ $result = mysqli_query($connect, $query);
 
 $row = mysqli_fetch_assoc($result);
 
-?>
 
 <!DOCTYPE html>
 
@@ -63,7 +61,7 @@ $row = mysqli_fetch_assoc($result);
 </html>
     
    4. Berikan code query untuk mengupdate sebuah data yang ada pada ke database?
-<?php
+
 
 include '../connect.php';
 
@@ -75,7 +73,7 @@ $result = mysqli_query($connect, $query);
 
 $row = mysqli_fetch_assoc($result);
 
-?>
+
 
 <!DOCTYPE html>
 
@@ -109,7 +107,7 @@ $row = mysqli_fetch_assoc($result);
 </html>
 
 5. Berikan code query untuk menghapus sebuah data yang ada pada ke database?
-<?php
+
 
 include '../connect.php';
 
@@ -131,7 +129,6 @@ if($num > 0)
 }
 
 echo "<a href='read.php'>Lihat Data</a>";
-?>
 
 data awal
 ![alt text](https://github.com/Lunggita29/AmeliaLunggita_Modul7_bg1_bg2/blob/master/data_awal.png)
