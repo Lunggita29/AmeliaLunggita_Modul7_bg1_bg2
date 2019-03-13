@@ -7,7 +7,7 @@
     $uname = "root";
     $pass = "";
 
-    $connect = mysqli_connect($host, $uname, $pass, $db);
+   $connect = mysqli_connect($host, $uname, $pass, $db);
     
 2. Bagaimana cara anda membuat database pada phpMySQl!
 
@@ -20,13 +20,12 @@ lalu akan ditampilkan create database. edit nama database lalu klik create. maka
 <?php
     include '../connect.php';
 
-    $query = "SELECT * FROM dosen";
-
+   $query = "SELECT * FROM dosen";
     $result = mysqli_query($connect, $query);
 
-    $num = mysqli_num_rows($result);
+   $num = mysqli_num_rows($result);
 
-    ?>
+   ?>
 
 <!DOCTYPE html> 
 <html>
@@ -40,9 +39,9 @@ lalu akan ditampilkan create database. edit nama database lalu klik create. maka
         <th>Telepon</th>
         <th>Aksi</th>
 
-    </tr>
+</tr>
 
-    <?php
+   <?php
         if($num > 0)
         {
             $no = 1;
@@ -59,17 +58,17 @@ lalu akan ditampilkan create database. edit nama database lalu klik create. maka
             }
         }
 
-        else
+ else
         {
             echo "<td colspan='3'>Tidak ada data</td>";
         }
 
-        ?>
-    </table>
+  ?>
+   </table>
     </body>
     </html>
     
-    4. Berikan code query untuk mengupdate sebuah data yang ada pada ke database?
+   4. Berikan code query untuk mengupdate sebuah data yang ada pada ke database?
 <?php
 
 include '../connect.php';
