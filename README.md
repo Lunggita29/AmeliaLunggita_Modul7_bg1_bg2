@@ -41,7 +41,7 @@ update data 3
     
 2. Bagaimana cara anda membuat database pada phpMySQl!
 
-ketik http://localhost/phpmyadmin/ kotak pencarian
+ketik localhost/phpmyadmin/ kotak pencarian
 lalu klik menu database dan klik new
 lalu akan ditampilkan create database. edit nama database lalu klik create. maka database berhasil dibuat
 
